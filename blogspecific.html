@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="specific blog page">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="stylesheet" type="text/css" href="./styles/modal.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+</head>
+<body>
+
+<header>
+</header>
+
+  <!-- Navigation. -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-bars"></i></button>
+      <div class="dropdown-content">
+        <div class="dropdown-content-specific"><a href="index.html">HOME</a></div>
+        <div class="dropdown-content-specific active"><a href="blog.html">POSTS</a></div>
+        <div class="dropdown-content-specific"><a href="about.html">ABOUT</a></div>
+        <div class="dropdown-content-specific"><a href="contact.html">CONTACT</a></div>
+      </div>
+    </div>
+    <div class="blog-name"><a class="blog-name" href="index.html">GAME HUB</a></div>
+  </nav>
+
+  <main>
+
+  <!-- Posts. -->
+  <div class="container-posts image">
+  </div>
+
+  <!-- Comments. -->
+  <div class="container-div">
+    <div class="div-three">
+      <h2>Comments:</h2>
+    </div>
+  </div>
+  <div class="container-comments">
+  </div>
+
+  <div class="back-button-container">
+    <div class="back-button">
+    <a href="blog.html">Back</a>
+    </div>
+  </div>
+  
+  <!-- Fullscreen. -->
+  <div id="fullpage" onclick="this.style.display='none';"></div>
+
+  </main>
+
+  <!-- The Modal -->
+  <div id="modal-id" class="modal">
+    <img class="modal-content" id="image-id">
+  </div>
+
+  <footer>
+    <div class="footer">GameHub Copyright © 2021</div>
+    <div class="footer"><a href="#">Privacy policy</a></div>
+    <div class="footer"><a href="contact.html">Contact us</a></div>
+  </footer>
+
+<script src="js/getpost.js"></script>
+<script src="js/getcomments.js"></script>
+<script src="js/fullscreen.js"></script>
+<script src="https://kit.fontawesome.com/1a5da3d949.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
