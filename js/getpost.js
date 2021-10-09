@@ -38,7 +38,7 @@ function createHtml(post) {
     detailContainer.innerHTML = `
         <div class="blog-posts">
         <div><h1>${post.title.rendered}</h1></div>
-        <img id="id-image" class="animation" src="${post.better_featured_image.source_url}" alt="${post.title.rendered}">
+        <img id="id-image" class="animation" src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.alt_text}">
         <div><p>${post.content.rendered}</p></div>
         <p>&#9998; ${new Date(post.date).toLocaleString()}</p>
         </div>
